@@ -1,0 +1,250 @@
+<html>
+ <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+  />
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+  <title>Peter Omunyidde</title>
+  <meta name="description" content="Peter Omunyidde is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+ </head>
+
+ <body>
+	<div class="about-container">
+		<ul>
+    	<li><a href="#" class="nav-link">ABOUT</a></li>
+  		<li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+  		<li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+  		<li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+  		<li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+    </ul>
+
+		<div class="about">
+	    <img src="peter.jpg" class="peter" />
+
+		  <h1> Peter Omunyidde </h1>
+
+
+		  <h2>FULL STACK DEVELOPER</h2>
+		  <hr class="grey"/>
+
+		  <P class="bio">
+				Peter Omunyidde is a Junior Software Engineer dedicated to building web applications that support internal and external organizational processes. Completed an intensive 24-week program with a certificate. Excellent problem solving skills with ability to effectively communicate complex technical information to non-technical audiences. Enhance existing systems with new features and performance improvements.
+		  </P>
+	  </div>
+  </div>
+  <h3 id="code-samples">Code Snippets</h3>
+  <hr class="yellow">
+
+  <div class="box">
+  	<h4>Temperature Conversion</h4>
+  	<p>
+  		This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+  	</p>
+  </div>
+  
+  <div class="box">
+<pre><code class="language-ruby">puts &quot;Enter degrees in celsius&quot;
+
+  celsius = gets
+
+  fahrenheit = (celsius.to_i * 9/5) + 32
+
+puts&quot;The temperature is #{fahrenheit} degrees fahrenheit.&quot;</code></pre>  
+  </div>   
+
+  <br class="clear" />
+
+  <div class="box">
+<pre><code class="language-ruby">puts &quot;Enter a number&quot;
+
+def ordinal(number)    
+
+if number == 11 || number == 12 || number == 13  
+
+     return &quot;That's the #{number}th item!&quot;
+
+  elsif number == 1
+
+     return &quot;That's the #{number}st item!&quot;
+
+  elsif number == 2
+
+     return &quot;That's the #{number}nd item!&quot;
+
+  elsif number == 3
+
+     return &quot;That's the #{number}rd item!&quot;     
+
+  else
+
+    return &quot;That's the #{number}th item!&quot;
+
+  end  
+
+end
+
+number = gets.chomp.to_i
+
+puts &quot;#{ordinal(number)}&quot;</code></pre>
+	</div>
+
+	<div class="box">
+  	<h4>Ordinal Challenge</h4>
+  	<p>
+  		This Ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.
+  	</p>
+	</div>
+
+	<br class="clear" />
+
+	<div class="box">
+  	<h4>Foobar</h4>
+  	<p>
+  		This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+  	</p>
+	</div>
+
+	<div class="box">
+<pre><code class="language-ruby">puts &quot;How many items do you want to see?&quot;
+
+val = gets.chomp.to_i
+
+list = []
+
+(1..val).each do |n|
+
+    if n % 3 == 0 &amp;&amp; n % 5 == 0
+
+        list &lt;&lt; &quot;foobar&quot;
+
+    elsif n % 3 == 0
+
+        list &lt;&lt; &quot;foo&quot;
+
+    elsif n % 5 == 0
+
+        list &lt;&lt; &quot;bar&quot;
+
+    else
+
+        list &lt;&lt; n
+
+    end
+
+end
+puts list</code></pre>
+	</div>
+
+	<br class="clear" />
+  
+  <h3 id="web-apps">Web Apps</h3>
+  <hr class="yellow" />
+
+  <div class="box">
+  	<h4>Quote Generator</h4>
+  	<img src="splurty.png" class="full-width" />
+  	<p>
+  		A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses git and Github for version control, and launched on Heroku.
+  	</p>	 
+  </div>	
+
+  <div class="box">
+      <h4>Yelp Clone</h4>
+      <img src="nomster.png" class="full-width" />
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <img src="flixter.png" class="full-width" />
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <img src="grammable.png" class="full-width" />
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <img src="todoster.png" class="full-width" />
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <img src="chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+    <br class="clear" />
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="yellow" />
+    <p class="skills-and-tools">
+      Peter has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+    <div class="icons">
+    	<img src="github.png" class="icon" />
+    	<img src="rubocop.png" class="icon" />
+    	<img src="trello.png" class="icon" />
+   		<img src="slack.png" class="icon" />
+    	<img src="codeship.png" class="icon" />
+
+    	<br class="clear" />
+    	<img src="skills.png" class="icon" />
+    </div>
+
+    <div class="contact-me" id="hire-me">
+    	<h3 class="contact-headline">Contact</h3>
+    	<hr class="yellow" />
+    	<p class="contact-info">
+    		Currently seeking entry level opportunities.
+    		Please get in touch via email:
+    	</p>
+    	
+    	<p>
+    		<a href="mailto:pomunyiddde@gmail.com" class="contact-link">	
+    			pomunyiddde@gmail.com
+    		</a>
+    	</p>		
+    </div>
+
+ </body>
+
+
+
+</html>
