@@ -18,7 +18,7 @@ h2 {
 
 .bio {
 	color: white;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .peter {
@@ -49,7 +49,7 @@ margin-top: 40px;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 600px;
+	height: 800px;
 }
 
 h3 {
